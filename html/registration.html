@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="row">
+    <h1 class="text-center">Форма регистрации на сайте</h1>
+</div>
+<form>
+    <div class="row mb-3">
+        <label for="inputFirstName" class="col-sm-2 col-form-label">Ваше имя</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputFirstName" placeholder="Введите его сюда...">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputLastName" class="col-sm-2 col-form-label">Ваша фамилия</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Введите её сюда...">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputLogin" class="col-sm-2 col-form-label">Ваш логин</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLogin" placeholder="Введите его сюда...">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Ваша электронная почта</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Введите её сюда..."
+                   aria-describedby="inputGroupPrepend2">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="form-group col">
+            <label for="inputPassword" class="form-label">Пароль</label>
+            <input type="password" id="inputPassword" class="form-control" aria-labelledby="passwordHelpBlock"
+                   placeholder="Введите свой пароль..." autocomplete="off">
+            <div id="passwordHelp" class="form-text">
+                Ваш пароль должен состоять из 8-20 символов, содержать буквы и цифры и специальные символы
+            </div>
+        </div>
+
+        <div class="form-group col">
+            <label for="inputConfirmationPassword">Подтверждение пароля</label>
+            <input type="password" class="form-control" id="inputConfirmationPassword" aria-describedby="emailHelp"
+                   placeholder="Повторите введенный вами пароль..." autocomplete="off">
+            <div id="passwordHelpBlock" class="form-text">
+                Ваш пароль должен состоять из 8-20 символов, содержать буквы и цифры и специальные символы
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <label class="form-select-input" for="selectButtonsAge">Совершеннолетний?</label>
+            <select class="form-select" id="selectButtonsAge">
+                <option selected>Мне больше 18</option>
+                <option value="1">Мне меньше 18</option>
+            </select>
+        </div>
+    </div>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Ваш пол</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate" id="gridRadios1" value="Мужской" checked>
+                Мужской
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rate" id="gridRadios2" value="Женский"> Женский
+            </div>
+        </div>
+    </fieldset>
+    <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSiteRules">
+                <label class="form-check-label" for="checkboxSiteRules">
+                    Принимаю правила пользования сайтом
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button type="button" id="buuton_send_data" class="btn btn-outline-success btn-lg"
+                    onclick="location.href='/login_form.html'">Войти</button>
+        </div>
+    </div>
+</form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="../js/get_data.js"></script>
+
+</html>
